@@ -45,9 +45,9 @@ router.post('/api/poststory',upload.single('image'),async(req,res)=>{
 })
 
 //email data fetch for uservarification
-router.get('/api/user/:id',async(req,res)=>{
-
-    const user_details= await user.find({_id:id})
+router.get('/api/user/',async(req,res)=>{
+    
+    const user_details= await user.find()
     res.json(user_details);
 })
 

@@ -1,12 +1,16 @@
 {
-    "version":2,
-    "name":"medium_api",
-    "builds":[
+    "version": 2,
+    "name":"medium-api",
+    "builds": [
         {
-            "src":"index.js","use":"@vercel/node"
+            "src": "index.js",
+            "use": "@now/node"
         }
     ],
-       "routes": [
-        {   "src":"/(.*)","dest":"/index.js"}
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "index.js"
+        }
     ]
 }
